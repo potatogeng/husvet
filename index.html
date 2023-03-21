@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Húsvét</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="./husvet.css">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+<body>
+
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s4,5">
+      <a href="#" class="w3-button w3-block w3-black">Kezdőlap</a>
+    </div>
+    <div class="w3-col s4">
+      <a href="#about" class="w3-button w3-block w3-black">Története</a>
+    </div>
+    <div class="w3-col s4">
+      <a href="#menu" class="w3-button w3-block w3-black">Receptek</a>
+    </div>  
+  </div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+  </div>
+  <div class="w3-display-bottomright w3-center w3-padding-large">
+  </div>
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large">
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">A húsvét története</span></h5>
+    <p>A húsvét a kereszténység legnagyobb ünnepe, a Krisztus-központú kalendárium központi főünnepe. Az Újszövetség szerint Jézus – pénteki keresztre feszítése után – a harmadik napon, vasárnap feltámadt. Kereszthalálával nem szabadította meg a világot a szenvedéstől, de megváltotta minden ember bűnét, feltámadásával pedig győzelmet aratott a halál felett. A valláson kívül is a tavaszvárás, a tavasz eljövetelének ünnepe is, amelyet március vagy április hónapban (a Hold állásának megfelelően) tartanak. A húsvétnak megfeleltethető az időben korábban kialakult zsidó vallási ünnep, a szabadság ünnepének (hág háhérut) is nevezik. A húsvét a pészahhal ritkán esik egybe, mivel a Hold járása szerinti naptár és a két változó ünnep számításától függ. A húsvét egybeesik a tavaszi nap-éj egyenlőség idején tartott termékenységi ünnepekkel is, amelyek eleme a feltámadás, az újjászületés. Az ünnep napjainkban sokak számára a tavasz beköszöntének ünnepe, amely vallástalan tartalommal, a szabadban töltött szórakozást jelenti, a húsvéti nyúl és a húsvéti tojás szimbólumaival.</p>
+    <img src="./husveti_locsolkodas.jpg" style="width:100%;max-width:1000px" class="w3-margin-top">
+  </div>
+</div>
+
+<!-- Menu Container -->
+<div class="w3-container" id="menu">
+  <div class="w3-content" style="max-width:700px">
+ 
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">Receptek</span></h5>
+  
+    <div class="w3-row w3-center w3-card w3-padding">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Sonka');" id="mylink">
+        <div class="w3-col s6 tablink">Sonka</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Kaszino');">
+        <div class="w3-col s6 tablink">Kaszinótojás Franciasalátával</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Muffin');">
+        <div class="w3-col s6 tablink">Csodás Csokis Muffin</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Kokusz');">
+        <div class="w3-col s6 tablink">Kókusztekercs (Sütés nélkül)</div>
+      </a>
+    </div>
+
+    <div id="Sonka" class="w3-container menu w3-padding-48 w3-card">
+      <h5>HOZZÁVALÓK</h5>
+      <p class="w3-text-grey">
+        2 dkg sonka<br>
+        2 fej vöröshagyma<br>
+        5 gerezd fokhagyma<br>
+        1 kvk bors<br>
+        köménymag (ízlés szerint)<br>
+        2 db babérlevél<br>
+        2 dl száraz fehérbor</p><br>
+    
+      <h5>ELKÉSZÍTÉS</h5>
+      <p class="w3-text-grey">A sonkát előző este beáztatjuk. Másnap tiszta vízben feltesszük a főni. Hozzáadjuk a félbe vágott vöröshagymát, a fokhagymát, a fűszereket, a bort.
+        Forrástól számítva kb. 2-2,5 órát lefedve főzzük csendesen (ahány kg a sonka, annyi óra a főzés idő). Általában a kisüzemi sonkáknak elég ez az idő, de hústűvel ellenőrizzük, hogy megpuhult-e kellőképpen a hús.
+        Ha puhának találjuk, félretesszük és hagyjuk a saját levében teljesen kihűlni. A kihűlt sonkát kiemeljük, megtörölgetjük, alufóliába csomagolva a hűtőbe tesszük - legalább fél napot érdemes hagyni a teljes dermedéshez, kifagyáshoz. A kötöző anyagot (ha volt rajta) a szeletelés előtt fejtsük le róla.
+        A sonkaléből annyi levet veszünk ki, amennyiben a főzni való tojások megfőnek. Fontos, hogy a tojásokat hagyjuk szobahőmérsékletre melegedni, és csak így tegyük a sonkalébe, máskülönben könnyen megrepedhet a héjuk.
+        A maradék sonkalevet leszűrve a hűtőben üvegben tárolhatjuk további felhasználásig, bableveshez, káposztaételhez, sonkaleves készítéséhez is kiváló.</p><br>
+        <img src="./sonka.jpg">
+    </div>
+
+    <div id="Kaszino" class="w3-container menu w3-padding-48 w3-card">
+      <h5>HOZZÁVALÓK</h5>
+      <p class="w3-text-grey">
+        10 db tojás<br>
+        1 kvk mustár<br>
+        5 dkg margarin<br>
+        2 ek majonéz<br>
+        1 ek tejföl<br>
+        petrezselyemlevél<br>
+        só<br>
+        bors</p><br>
+      <h5>ELKÉSZÍTÉS</h5>
+      <p class="w3-text-grey">A kaszinótojás elkészítéséhez megfőzzük és megpucoljuk a tojásokat. Félbevágjuk, kiskanállal kikotorjuk a sárgákat. A tojássárgákhoz hozzákeverünk kevés mustárt, margarint, majonézt, tejfölt és, néhány csipet apróra vágott petrezselymet. Sóval, borssal ízesítjük, majd a masszát visszatöltjük a tojásokba.
+        A franciasaláta elkészítése előtt tartásmártást készítünk, amelyhez összekeverjük a tejfölt, a majonézt, a mustárt, majd ízlés szerint ízesítjük sóval, borssal, pici cukorral.
+        A salátához forró, sós vízben megfőzzük a zöldségeket, majd lecsepegtetjük, és egy tálra rakjuk, hogy kihűljön. Hozzákeverjük a konzerv kukoricát, a felcsíkozott hagymát és végül az előzőleg elkészített tartármártást.
+        Egy tálat kibélelünk fejes saláta levelekkel, ráöntjük a francia salátát és a tetején szép sorban végigpakoljuk a kaszinótojásokat. Díszítésként cikkekre vágott paradicsomot és felezett uborkakarikákat tűzünk a tojások közé.</p><br>
+        <img src="./tojas.jpg">
+      </div>
+    <div id="Muffin" class="w3-container menu w3-padding-48 w3-card">
+      <h5>HOZZÁVALÓK</h5>
+      <p class="w3-text-grey">
+        15 dkg liszt<br>
+        0.5 csom sütőpor<br>
+        15 dkg cukor<br>
+        5 dkg cukrozatlan kakaópor<br>
+        2 db tojás<br>
+        15 dkg vaj<br>
+        3 ek baracklekvár<br>
+        5 dkg étcsokoládé</p><br>
+    
+      <h5>ELKÉSZÍTÉS</h5>
+      <p class="w3-text-grey">A csokis muffin elkészítéséhez egy tálban összekeverjük a száraz hozzávalókat: a lisztet, a sütőport, a cukrot és a kakaóport.
+        Folyamatos keverés mellett hozzáadjuk a tojásokat, a felolvasztott vajat, a baracklekvárt, végül pedig a darabokra tört étcsokoládét.
+        A tésztát egy 12 darabos, papírkapszlikkal bélelt muffinformába adagoljuk, majd 170 fokra előmelegített sütőben 20-25 perc alatt készre sütjük.</p><br>
+        <img src="./muffin.jpg">
+      </div> 
+    <div id="Kokusz" class="w3-container menu w3-padding-48 w3-card">
+      <h5>HOZZÁVALÓK</h5>
+      <p class="w3-text-grey">
+        30 dkg darált keksz<br>
+        2 ek kakaópor<br>
+        1 ek rum<br>
+        10 dkg porcukor<br>
+        2 dl tej<br>
+        A krémhez:<br>
+        10 dkg vaj<br>
+        15 dkg porcukor<br>
+        5 dkg kókuszreszelék<br>
+        A szóráshoz:<br>
+        5 dkg kókuszreszelék<br>
+      <h5>ELKÉSZÍTÉS</h5>
+      <p class="w3-text-grey">A kókusztekercs elkészítéséhez keverőtálban összegyúrjuk a darált háztartási kekszet, a kakaóport, a rumot, a porcukrot és a tejet, majd két részre osztjuk.
+        Ezután egy másik tálban a krémet készítjük el, amelyhez habosra keverjük a vajat a porcukorral, majd hozzákeverjük a kókuszreszeléket is.
+        Sütőpapíron vagy szilikonlapon 3-5 mm vastagra nyújtjuk a két tésztamasszát. Mindkettőt megkenjük a krémmel, és a papír segítségével szorosan feltekerjük.
+        A tekercseket meghempergetjük a kókuszreszelékben, majd néhány órára a hűtőszekrénybe tesszük.
+        Tálaláskor ujjnyi vastag szeletekre vágjuk.</p><br>
+      <img src="./kokusz.jpg">
+    </div>
+    <img src="./dekoracio.jpg" style="width:100%;max-width:1000px;margin-top:32px;">
+  </div>
+</div>
+
+<!-- End page content -->
+</div>
+
+
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
